@@ -285,7 +285,6 @@ header p {
 
 .training-merit-item {
   border-radius: 1.7rem;
-  padding: 1.5rem 2.4rem;
   transition: 0.3s;
   flex: 1 1 21.4rem;
   margin: 1.5rem 0.6rem;
@@ -396,7 +395,8 @@ header p {
   background-color: #fff;
   box-shadow: 0 0.2rem 2rem #fdd;
   border-radius: 2rem;
-  padding: 2rem;
+  min-height: 22rem;
+  flex: 1 1 21.4rem;
 }
 
 .training-s6-img {
@@ -412,13 +412,8 @@ header p {
 .key-areas {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
-}
-
-.key-areas .area {
-  min-height: 22rem;
-  flex: 1 1 21.4rem;
 }
 
 .section-7 .faq-table {
@@ -455,7 +450,6 @@ header p {
   color: var(--almost-white);
   background-color: var(--almost-black);
   border-radius: 3rem;
-  padding: 2.8rem !important;
   height: 100%;
   z-index: 2;
 }
@@ -520,10 +514,6 @@ header p {
 .section-8 .section-8-circle-2 img {
   width: 100%;
   height: auto;
-}
-
-.section-9 {
-  margin: 1rem 2rem;
 }
 
 .section-9-container {
@@ -926,8 +916,15 @@ header p {
     min-width: 8rem !important;
   }
 
+  .key-areas {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
   .key-areas .area {
     min-height: 20rem;
+    
   }
 
   .section-9 .section-9-container h1 {
