@@ -778,9 +778,10 @@ header p {
 
 .talent-section-4 {
   background-color: var(--talent-light-red);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
 }
 
 .talent-section-4-container {
@@ -790,22 +791,20 @@ header p {
 
 .talents-hire {
   position: relative;
-  max-width: 90%;
-  margin: 3rem 3rem;
+  /* max-width: 90%; */
   display: flex;
   justify-content: space-between;
-  /* align-items: stretch; */
+  place-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
 .talent-hire-item {
-  max-width: 100%;
+  max-width: 400px;
   background-color: #fff;
   color: var(--soft-black);
   flex: 1 1 19rem;
   border-bottom-right-radius: 1rem;
-  padding: 2rem;
   font-weight: 500;
 }
 
@@ -891,6 +890,10 @@ header p {
   .talent-section-2 .countries-impacted {
     gap: 2%;
     justify-content: center;
+  }
+
+  .talents-hire {
+    max-width: 100%;
   }
 }
 
@@ -1061,10 +1064,4 @@ header p {
     padding: 0.3rem 1rem;
     flex: 1 1 3rem;
   }
-
-  
-  /* .talent-section-4 {
-    padding: 2rem 5%;
-    margin: 1rem -8% !important;
-  } */
 }
